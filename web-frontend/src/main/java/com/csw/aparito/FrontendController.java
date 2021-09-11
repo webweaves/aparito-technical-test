@@ -2,6 +2,8 @@ package com.csw.aparito;
 
 import javax.inject.Named;
 
+import com.csw.aparito.client.PrimeNumbersClient;
+
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
@@ -51,6 +53,11 @@ public class FrontendController implements Serializable {
 	 * @return a list of prime numbers
 	 */
 	private List<Integer> fetchPrimeNumbers(Integer maxNumber) {
+		
+		PrimeNumbersClient pnc = new PrimeNumbersClient();
+		
+		pnc.getPrimeNumbers();
+		
 		return Arrays.asList(1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5);
 	}
 

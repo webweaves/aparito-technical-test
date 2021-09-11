@@ -8,6 +8,7 @@
 	<name>primenumbers-rest-api</name>
 	<url>http://maven.apache.org</url>
 	<build>
+		<finalName>primenumbers-rest-api</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.wildfly.plugins</groupId>
@@ -35,6 +36,14 @@
 			<version>2.0.1.Final</version>
 			<type>maven-plugin</type>
 		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+
 
 	</dependencies>
 </project>
