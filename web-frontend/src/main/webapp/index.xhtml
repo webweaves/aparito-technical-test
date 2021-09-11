@@ -6,9 +6,15 @@
     </h:head>  
       
     <h:body>  
-
-<p:panel header="Login Page"> 
-	    <h:inputText value="Hell(p)o" />
-</p:panel>
+		<h:form>
+			<p:panel header="Prime Numbers"> 
+			    <h:outputText value="Please enter a number" />
+			    <h:inputText value="x" />
+			    <h:commandButton 
+			    	action="#{frontendController.primeNumberClick}">
+			    </h:commandButton>
+			</p:panel>
+	    </h:form>
     </h:body>  
+    
 </html>
