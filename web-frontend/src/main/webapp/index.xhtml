@@ -10,12 +10,29 @@
 			<p:panel header="Prime Numbers"> 
 			    <h:outputText value="Please enter a number" />
 			    
-			    <p:inputNumber value="#{frontendController.primeLimit}"
-			    	decimalPlaces="0"/>
+			    <p:inputNumber 
+			    	decimalPlaces="0"
+			    	value="#{frontendController.primeLimit}"/>
 			    
-			    <h:commandButton 
+			    <h:commandButton
+			    	value="Send data"
+			    	update="resultsTable"
 			    	action="#{frontendController.primeNumberClick}">
 			    </h:commandButton>
+			</p:panel>
+		
+			<p:panel rendered="#{not empty frontendController.primeNumbersResult}">
+				<h:outputText value="Your results, a list of prime numbers less than or equal to #{frontendController.primeLimit}"/>
+				
+				<p:dataTable id="resultsTable"
+					var="number" 
+					value="#{frontendController.primeNumbersResult}" 
+					rows="10"
+                    paginator="true"
+                    paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                    currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records">
+					<p:column>#{number}</p:column>
+				</p:dataTable>
 			</p:panel>
 	    </h:form>
     </h:body>  
