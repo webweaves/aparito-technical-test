@@ -9,7 +9,10 @@
 		<h:form>
 			<p:panel header="Prime Numbers"> 
 			    <h:outputText value="Please enter a number" />
-			    <h:inputText value="1" />
+			    
+			    <p:inputNumber value="#{frontendController.primeLimit}"
+			    	decimalPlaces="0"/>
+			    
 			    <h:commandButton 
 			    	action="#{frontendController.primeNumberClick}">
 			    </h:commandButton>
