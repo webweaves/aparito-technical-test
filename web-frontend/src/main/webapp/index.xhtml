@@ -1,40 +1,60 @@
-<html xmlns="http://www.w3.org/1999/xhtml" 
-      xmlns:h="http://java.sun.com/jsf/html" 
-      xmlns:f="http://java.sun.com/jsf/core" 
-      xmlns:p="http://primefaces.org/ui">  
-    <h:head>  
-    </h:head>  
-      
-    <h:body>  
-		<h:form>
-			<p:panel header="Prime Numbers"> 
-			    <h:outputText value="Please enter a number" />
-			    
-			    <p:inputNumber 
-			    	decimalPlaces="0"
-			    	value="#{frontendController.primeLimit}"/>
-			    
-			    <h:commandButton
-			    	value="Send data"
-			    	update="resultsTable"
-			    	action="#{frontendController.primeNumberClick}">
-			    </h:commandButton>
-			</p:panel>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+
+<h:body>
+	<h:form id="primeForm">
+		<p:messages>
+			<p:autoUpdate />
+		</p:messages>
+
+		<p:panel header="Prime Numbers">
+			<h:panelGrid id="grid" columns="3" cellpadding="7">
+				<h:outputText value="Prime number limit" />
+				<p:inputNumber id="primeLimit" required="true" decimalPlaces="0"
+					label="Prime number limit" value="#{frontendController.primeLimit}" />
+				<p:message for="primeLimit" />
+
+				<h:outputText value="Result page size" />
+				<p:inputNumber id="resultsSize" required="true" decimalPlaces="0"
+					label="Results page size"
+					value="#{frontendController.resultsPageSize}" />
+				<p:message for="resultsSize" />
+			</h:panelGrid>
+
+			<h:panelGrid id="ajaxButton" columns="1" cellpadding="7">
+				<div class="p-pt-3">
+					<p:commandButton value="Send data" id="submitAjax"
+						update="resultsContainer"
+						action="#{frontendController.primeNumberClick}" styleClass="p-mr-2" />
+				</div>
+			</h:panelGrid>
+		</p:panel>
+
+		<p:panel style="margin-top:20px" id="resultsContainer">
+			<h:outputText
+				rendered="#{empty frontendController.primeNumbersResult}"
+				value="Your results will appear here, enter a prime number to display all prime number up to and including your supplied number" />
 		
-			<p:panel rendered="#{not empty frontendController.primeNumbersResult}">
-				<h:outputText value="Your results, a list of prime numbers less than or equal to #{frontendController.primeLimit}"/>
-				
-				<p:dataTable id="resultsTable"
-					var="number" 
-					value="#{frontendController.primeNumbersResult}" 
-					rows="10"
-                    paginator="true"
-                    paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                    currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records">
-					<p:column>#{number}</p:column>
-				</p:dataTable>
+			<p:panel id="resultsPanel" rendered="#{not empty frontendController.primeNumbersResult}">
+				<p:panelGrid columns="1" cellpadding="7">
+					<h:outputText style="padding:10px"
+						value="Your results, a list of prime numbers less than or equal to #{frontendController.primeLimit}" />
+	
+					<p:dataTable id="resultsTable" var="number"
+						value="#{frontendController.primeNumbersResult}"
+						rows="#{frontendController.resultsPageSize}" paginator="true"
+						paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+						currentPageReportTemplate="{startRecord}-{endRecord} of {totalRecords} records">
+						<p:column>#{number}</p:column>
+					</p:dataTable>
+				</p:panelGrid>
 			</p:panel>
-	    </h:form>
-    </h:body>  
-    
+		</p:panel>
+	</h:form>
+</h:body>
+
 </html>

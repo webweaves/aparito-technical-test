@@ -2,6 +2,9 @@ package com.csw.aparito;
 
 import javax.inject.Named;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.csw.aparito.client.PrimeNumbersClient;
 
 import java.io.Serializable;
@@ -14,6 +17,11 @@ import javax.enterprise.context.SessionScoped;
 @SessionScoped
 public class FrontendController implements Serializable {
 
+	/*
+	 * configure logging output
+	 */
+	Logger logger = LoggerFactory.getLogger(FrontendController.class);
+	
 	/**
 	 * 
 	 */
@@ -23,6 +31,11 @@ public class FrontendController implements Serializable {
 	 * storage for GUI user value
 	 */
 	private Integer primeLimit;
+	
+	/*
+	 * storage for results size, default to 10
+	 */
+	private Integer resultsPageSize = 10;
 	
 	/*
 	 * numbers in this list will be presented to the user
@@ -35,7 +48,7 @@ public class FrontendController implements Serializable {
 	 * @return
 	 */
 	public String primeNumberClick() {
-		System.out.println("Supplied: " + getPrimeLimit());
+		logger.info("User supplied value {}", getPrimeLimit());
 	
 		//fetch the list of prime numbers
 		List<Integer> primeNumbers = fetchPrimeNumbers(getPrimeLimit());
@@ -43,7 +56,7 @@ public class FrontendController implements Serializable {
 		//set the result
 		setPrimeNumbersResult(primeNumbers);
 		
-		return null;
+		return "";
 	}
 
 	/**
@@ -54,11 +67,19 @@ public class FrontendController implements Serializable {
 	 */
 	private List<Integer> fetchPrimeNumbers(Integer maxNumber) {
 		
+		/*
+		 * create a new prime faces client to interact with REST endpoint
+		 */
 		PrimeNumbersClient pnc = new PrimeNumbersClient();
 		
-		pnc.getPrimeNumbers();
+		/*
+		 * get the prime numbers
+		 */
+		List<Integer> primeNumbers = pnc.getPrimeNumbers();
 		
-		return Arrays.asList(1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5,1,2,3,5);
+		logger.debug("Retrieved {} prime numbers from PrimeNumbersClient.getPrimeNumbers()", primeNumbers.size());
+		
+		return primeNumbers;
 	}
 
 	public Integer getPrimeLimit() {
@@ -75,5 +96,13 @@ public class FrontendController implements Serializable {
 
 	public void setPrimeNumbersResult(List<Integer> primeNumbersResult) {
 		this.primeNumbersResult = primeNumbersResult;
+	}
+
+	public Integer getResultsPageSize() {
+		return resultsPageSize;
+	}
+
+	public void setResultsPageSize(Integer resultsPageSize) {
+		this.resultsPageSize = resultsPageSize;
 	}
 }
