@@ -8,10 +8,11 @@ import org.slf4j.LoggerFactory;
 import com.csw.aparito.client.PrimeNumbersClient;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 
 @Named
 @SessionScoped
@@ -53,10 +54,22 @@ public class FrontendController implements Serializable {
 		//fetch the list of prime numbers
 		List<Integer> primeNumbers = fetchPrimeNumbers(getPrimeLimit());
 		
-		//set the result
+		/*
+		 * if no numbers returned from REST let the user know there was an issue
+		 */
+		
+		if (primeNumbers.isEmpty()) {
+			FacesContext.getCurrentInstance().
+            	addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, 
+            		"There was an error communicating with REST endpoint, please check server logs", null));
+			
+			return null;
+		}
+		
+		//set the result if not empty
 		setPrimeNumbersResult(primeNumbers);
 		
-		return "";
+		return null;
 	}
 
 	/**
@@ -65,19 +78,19 @@ public class FrontendController implements Serializable {
 	 * @param maxNumber
 	 * @return a list of prime numbers
 	 */
-	private List<Integer> fetchPrimeNumbers(Integer maxNumber) {
+	private List<Integer> fetchPrimeNumbers(Integer maxPrimeNumber) {
 		
 		/*
 		 * create a new prime faces client to interact with REST endpoint
 		 */
-		PrimeNumbersClient pnc = new PrimeNumbersClient();
+		PrimeNumbersClient primeNumbersClient = new PrimeNumbersClient();
 		
 		/*
-		 * get the prime numbers
+		 * get the prime numbers from the client
 		 */
-		List<Integer> primeNumbers = pnc.getPrimeNumbers();
+		List<Integer> primeNumbers = primeNumbersClient.getPrimeNumbersFromRESTendpoint(maxPrimeNumber);
 		
-		logger.debug("Retrieved {} prime numbers from PrimeNumbersClient.getPrimeNumbers()", primeNumbers.size());
+		logger.info("Retrieved {} prime numbers from PrimeNumbersClient.getPrimeNumbers()", primeNumbers.size());
 		
 		return primeNumbers;
 	}
