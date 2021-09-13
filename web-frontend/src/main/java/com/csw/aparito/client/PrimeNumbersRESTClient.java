@@ -1,12 +1,15 @@
 package com.csw.aparito.client;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Invocation.Builder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
@@ -22,14 +25,17 @@ import org.slf4j.LoggerFactory;
  * @author csw
  *
  */
-public class PrimeNumbersClient {
+public class PrimeNumbersRESTClient implements Serializable {
+
+	private static final long serialVersionUID = 4833775986037364950L;
 
 	/*
 	 * configure logging output
 	 */
-	Logger logger = LoggerFactory.getLogger(PrimeNumbersClient.class);
+	Logger logger = LoggerFactory.getLogger(PrimeNumbersRESTClient.class);
 	
 	private Client client;
+	
 	private WebTarget target;
 	
 	private String baseUrl = "http://localhost:8080/primenumbers-rest-api/resources/generate-prime-numbers/";
@@ -64,15 +70,9 @@ public class PrimeNumbersClient {
  			 */
  			JsonObject jsonObject = target.request(MediaType.APPLICATION_JSON_TYPE).get(JsonObject.class);
  			
- 			logger.info("Actual raw response from REST request: {}", jsonObject.get("primeNumbers"));
  			
- 			/*
- 			 * iterate through results and add to the return list of integers
- 			 */
- 			JsonArray jsonArray = (JsonArray)jsonObject.get("primeNumbers");
- 			for (int idx=0; idx < jsonArray.size(); ++idx) {
- 				primeNumberResults.add(Integer.valueOf(jsonArray.get(idx).toString())); 
- 			}
+ 			//extract numbers from JSON
+ 			primeNumberResults = populatePrimeListFromJson(jsonObject);
  			
  			logger.info("{} prime numbers obtained from REST request", primeNumberResults.size());
  			
@@ -89,11 +89,37 @@ public class PrimeNumbersClient {
 	}
 
 	/**
+	 * extract the prime numbers from the JSON object
+	 * 
+	 * @param jsonObject
+	 * @return
+	 */
+	public List<Integer> populatePrimeListFromJson(JsonObject jsonObject) {
+		
+		List<Integer> primeNumberResults = new ArrayList<>();
+		
+		try {
+			/*
+			 * iterate through results and add to the return list of integers
+			 */
+			JsonArray jsonArray = (JsonArray)jsonObject.get("primeNumbers");
+			for (int idx=0; idx < jsonArray.size(); ++idx) {
+				primeNumberResults.add(Integer.valueOf(jsonArray.get(idx).toString())); 
+			}
+			
+			return primeNumberResults;
+		} catch (java.lang.NullPointerException e) {
+			logger.info("There was a problem parsing the JSON");
+			return null;
+		}
+	}
+
+	/**
 	 * Construct the client and target REST endpoint objects
 	 * 
 	 * @param string
 	 */
-	private void buildClient(final String finalUrl) {		
+	public void buildClient(final String finalUrl) {		
 		logger.info("Constructing client and target REST endpoint objects");
 		
 		/*

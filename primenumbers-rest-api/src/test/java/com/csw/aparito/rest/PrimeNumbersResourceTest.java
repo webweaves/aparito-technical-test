@@ -1,10 +1,14 @@
 package com.csw.aparito.rest;
 
+import static org.mockito.Mockito.when;
+
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
+
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
@@ -21,10 +25,8 @@ public class PrimeNumbersResourceTest {
 	
 	@Before
 	public void initMocks() {
-
-		//mock the pprimeNumbersController
-		primeNumbersController = Mockito.mock(PrimeNumbersController.class);
-		
+		//mock the primeNumbersController
+		primeNumbersController = Mockito.mock(PrimeNumbersController.class);		
 		MockitoAnnotations.initMocks(this);
 	}
 
@@ -35,8 +37,8 @@ public class PrimeNumbersResourceTest {
 	
 	@Test
 	public void testAValidNumber() {
-		PrimeNumbers pn = primeNumbersResource.generatePrimeNumbers("10");
-		System.out.println(pn.getPrimeNumbers().size());
-		
+		when( primeNumbersController.getPrimeNumbers(10) ).thenCallRealMethod();
+		PrimeNumbers primeNumbers = primeNumbersResource.generatePrimeNumbers("10");
+		assertEquals("[2, 3, 5, 7]", primeNumbers.getPrimeNumbers().toString());
 	}
 }

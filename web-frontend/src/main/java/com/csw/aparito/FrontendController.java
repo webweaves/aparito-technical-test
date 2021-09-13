@@ -1,11 +1,12 @@
 package com.csw.aparito;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.csw.aparito.client.PrimeNumbersClient;
+import com.csw.aparito.client.PrimeNumbersRESTClient;
 
 import java.io.Serializable;
 import java.util.List;
@@ -18,16 +19,22 @@ import javax.faces.context.FacesContext;
 @SessionScoped
 public class FrontendController implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6638320870456419102L;
+
 	/*
 	 * configure logging output
 	 */
 	Logger logger = LoggerFactory.getLogger(FrontendController.class);
-	
-	/**
-	 * 
+		
+	/*
+	 * create a new prime faces client to interact with REST endpoint
 	 */
-	private static final long serialVersionUID = 1L;
-
+	@Inject
+	private PrimeNumbersRESTClient primeNumbersClient;
+	
 	/*
 	 * storage for GUI user value
 	 */
@@ -57,7 +64,6 @@ public class FrontendController implements Serializable {
 		/*
 		 * if no numbers returned from REST let the user know there was an issue
 		 */
-		
 		if (primeNumbers == null) {
 			FacesContext.getCurrentInstance().
             	addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, 
@@ -78,13 +84,8 @@ public class FrontendController implements Serializable {
 	 * @param maxNumber
 	 * @return a list of prime numbers
 	 */
-	private List<Integer> fetchPrimeNumbers(Integer maxPrimeNumber) {
-		
-		/*
-		 * create a new prime faces client to interact with REST endpoint
-		 */
-		PrimeNumbersClient primeNumbersClient = new PrimeNumbersClient();
-		
+	public List<Integer> fetchPrimeNumbers(Integer maxPrimeNumber) {
+
 		/*
 		 * get the prime numbers from the client
 		 */
