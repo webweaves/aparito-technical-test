@@ -1,8 +1,5 @@
 package com.csw.aparito.rest;
 
-import java.util.Arrays;
-import java.util.List;
-
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -36,7 +33,7 @@ public class PrimeNumbersResource {
 		try {
 			Integer.parseInt(maxPrimeNumber);
 		} catch (java.lang.NumberFormatException e) {
-			return new PrimeNumbers(Arrays.asList(0));
+			return null;
 		}
 		
 		/*
