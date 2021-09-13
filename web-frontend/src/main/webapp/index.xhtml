@@ -14,12 +14,18 @@
 		<p:panel header="Prime Numbers">
 			<h:panelGrid id="grid" columns="3" cellpadding="7">
 				<h:outputText value="Prime number limit" />
-				<p:inputNumber id="primeLimit" required="true" decimalPlaces="0"
+				<p:inputNumber id="primeLimit"
+					inputStyle="width: 70px"
+					required="true" 
+					decimalPlaces="0"
 					label="Prime number limit" value="#{frontendController.primeLimit}" />
 				<p:message for="primeLimit" />
 
 				<h:outputText value="Result page size" />
-				<p:inputNumber id="resultsSize" required="true" decimalPlaces="0"
+				<p:inputNumber id="resultsSize" 
+					inputStyle="width: 70px"
+					required="true" 
+					decimalPlaces="0"
 					label="Results page size"
 					value="#{frontendController.resultsPageSize}" />
 				<p:message for="resultsSize" />
