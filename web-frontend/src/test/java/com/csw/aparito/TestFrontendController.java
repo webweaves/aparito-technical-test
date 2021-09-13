@@ -4,14 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-
 /**
  * Unit test for simple App.
  */
-public class TestPrimeNumbers {
-
+public class TestFrontendController {
+	
 	@Test
-	public void TestOne() {
+	public void testPrimeNumberClick() {
 		assertEquals(1, 1);
 	}
 }
