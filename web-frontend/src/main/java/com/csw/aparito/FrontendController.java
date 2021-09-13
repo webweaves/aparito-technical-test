@@ -58,7 +58,7 @@ public class FrontendController implements Serializable {
 		 * if no numbers returned from REST let the user know there was an issue
 		 */
 		
-		if (primeNumbers.isEmpty()) {
+		if (primeNumbers == null) {
 			FacesContext.getCurrentInstance().
             	addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, 
             		"There was an error communicating with REST endpoint, please check server logs", null));
@@ -89,6 +89,11 @@ public class FrontendController implements Serializable {
 		 * get the prime numbers from the client
 		 */
 		List<Integer> primeNumbers = primeNumbersClient.getPrimeNumbersFromRESTendpoint(maxPrimeNumber);
+		
+		if (primeNumbers == null) {
+			logger.info("Nothing returned from REST API, there is a problem!");
+			return null;
+		}
 		
 		logger.info("Retrieved {} prime numbers from PrimeNumbersClient.getPrimeNumbers()", primeNumbers.size());
 		

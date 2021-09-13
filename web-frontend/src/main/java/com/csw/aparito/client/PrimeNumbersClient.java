@@ -71,7 +71,7 @@ public class PrimeNumbersClient {
  			 */
  			JsonArray jsonArray = (JsonArray)jsonObject.get("primeNumbers");
  			for (int idx=0; idx < jsonArray.size(); ++idx) {
- 				primeNumberResults.add(new Integer(jsonArray.get(idx).toString())); 
+ 				primeNumberResults.add(Integer.valueOf(jsonArray.get(idx).toString())); 
  			}
  			
  			logger.info("{} prime numbers obtained from REST request", primeNumberResults.size());
@@ -82,9 +82,9 @@ public class PrimeNumbersClient {
 			/*
 			 * any errors fail gracefully
 			 */
-			logger.info("Error with REST request: {}", e.getMessage());
+			logger.info("Error with REST request,response = {}", e.getMessage());
 	
-			return new ArrayList<>();
+			return null;
 		}
 	}
 
