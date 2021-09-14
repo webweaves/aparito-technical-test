@@ -28,8 +28,8 @@ Change directory to aparito-technical-test with **cd aparito-technical-test**
 
 ## Deployment
 There are two options for deployment 
-* To deploy locally you will need an install of wildfly running, download, install and startup [Download here](https://www.wildfly.org/downloads/)
-When wildfly is running you can run the script **deployLocalWildflyInstance.sh** from the command line, this will build and deploy the application.  ` 
+* To deploy locally you will need an install of wildfly running, download, install and startup [Download here](https://www.wildfly.org/downloads/)  
+When wildfly is running you can run the script **deployLocalWildflyInstance.sh** from the command line, this will build and deploy the application.  
 After deployment point browser to: http://localhost:8080/PrimeNumbers/
 
 * Run with docker
