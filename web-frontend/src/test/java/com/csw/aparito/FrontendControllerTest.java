@@ -57,7 +57,7 @@ public class FrontendControllerTest {
 		doReturn(null).when(frontendController).fetchPrimeNumbers(any());
 		
 		frontendController.setPrimeLimit(10);
-		assertNull("Expected a null return result", frontendController.primeNumberClick());
+		assertEquals("Expected an empty result", "", frontendController.primeNumberClick());
 	
 		//check an error message was added to the faces context
 		verify( facesContext ).addMessage( any(), stringCaptor.capture() );
@@ -69,7 +69,7 @@ public class FrontendControllerTest {
 		doReturn(Arrays.asList(1,2,3)).when(frontendController).fetchPrimeNumbers(any());
 		
 		frontendController.setPrimeLimit(10);
-		assertNull("Expected a null return result", frontendController.primeNumberClick());
+		assertEquals("Expected an empty string", "", frontendController.primeNumberClick());
 	
 		assertEquals("Expected 3 entries in primeNumbersResult", 3, frontendController.getPrimeNumbersResult().size());
 	}
