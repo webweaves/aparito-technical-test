@@ -1,6 +1,6 @@
 # Technical Test – Christian Weaves – September 2021
 
-## The solution
+## The Solution
 
 This project comprises of the following components
 
