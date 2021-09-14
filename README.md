@@ -57,7 +57,7 @@ Follow the links below for detailed unit test coverage:
 ### Install to maven repository with
 mvn install
 
-# Build and deploy both projects (requires running instance of Wildfly)
+### Build and deploy both projects (requires running instance of Wildfly)
 mvn install wildfly:deploy -pl web-frontend -pl primenumbers-rest-api
 
 ## Build and deploy individual projects with maven:
