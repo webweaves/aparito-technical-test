@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PrimeNumbersResource.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">primenumbers-rest-api</a> &gt; <a href="index.source.html" class="el_package">com.csw.aparito.rest</a> &gt; <span class="el_source">PrimeNumbersResource.java</span></div><h1>PrimeNumbersResource.java</h1><pre class="source lang-java linenums">package com.csw.aparito.rest;
+
+import javax.inject.Inject;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.csw.aparito.PrimeNumbers;
+import com.csw.aparito.PrimeNumbersController;
+
+@Path(&quot;generate-prime-numbers&quot;)
+@Produces(MediaType.APPLICATION_JSON)
+<span class="fc" id="L15">public class PrimeNumbersResource {</span>
+
+	@Inject
+	PrimeNumbersController primeNumbersController;
+	
+	@GET
+	@Path(&quot;{maxPrimeNumber}&quot;)
+	/**
+	 * REST endpoint to generate a list of prime numbers
+	 * 
+	 * Access using http://localhost:8080/primenumbers-rest-api/resources/generate-prime-numbers/&lt;maxPrimeNumber&gt;
+	 * 
+	 * @param maxPrimeNumber
+	 * @return List of prime numbers 
+	 */
+	public PrimeNumbers generatePrimeNumbers(@PathParam(&quot;maxPrimeNumber&quot;) String maxPrimeNumber) {
+		
+		//parameter validation, return 0 if parameter parsing fails
+		try {
+<span class="fc" id="L34">			Integer.parseInt(maxPrimeNumber);</span>
+<span class="fc" id="L35">		} catch (java.lang.NumberFormatException e) {</span>
+<span class="fc" id="L36">			return null;</span>
+<span class="fc" id="L37">		}</span>
+		
+		/*
+		 * generate the prime numbers then send them to a new PrimeNumbers pojo
+		 */
+<span class="fc" id="L42">		return new PrimeNumbers(primeNumbersController.getPrimeNumbers(Integer.parseInt(maxPrimeNumber)));</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

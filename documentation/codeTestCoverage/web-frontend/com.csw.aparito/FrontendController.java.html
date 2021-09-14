@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FrontendController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">web-frontend Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">com.csw.aparito</a> &gt; <span class="el_source">FrontendController.java</span></div><h1>FrontendController.java</h1><pre class="source lang-java linenums">package com.csw.aparito;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.servlet.http.HttpSession;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.csw.aparito.client.PrimeNumbersRESTClient;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.enterprise.context.SessionScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+@Named
+@SessionScoped
+<span class="fc" id="L21">public class FrontendController implements Serializable {</span>
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6638320870456419102L;
+
+	/*
+	 * configure logging output
+	 */
+<span class="fc" id="L31">	Logger logger = LoggerFactory.getLogger(FrontendController.class);</span>
+		
+	/*
+	 * create a new prime faces client to interact with REST endpoint
+	 */
+	@Inject
+	private PrimeNumbersRESTClient primeNumbersClient;
+	
+	/*
+	 * storage for GUI user value
+	 */
+	private Integer primeLimit;
+	
+	/*
+	 * storage for results size, default to 10
+	 */
+<span class="fc" id="L47">	private Integer resultsPageSize = 10;</span>
+	
+	/*
+	 * numbers in this list will be presented to the user
+	 */
+	private List&lt;Integer&gt; primeNumbersResult;
+	
+	/**
+	 * entry point from user button click from GUI
+	 * 
+	 * @return
+	 */
+	public String primeNumberClick() {
+<span class="fc" id="L60">		logger.info(&quot;User supplied value {}&quot;, getPrimeLimit());</span>
+	
+		//fetch the list of prime numbers
+<span class="fc" id="L63">		List&lt;Integer&gt; primeNumbers = fetchPrimeNumbers(getPrimeLimit());</span>
+		
+		/*
+		 * if no numbers returned from REST let the user know there was an issue
+		 */
+<span class="fc bfc" id="L68" title="All 2 branches covered.">		if (primeNumbers == null) {</span>
+<span class="fc" id="L69">			FacesContext.getCurrentInstance().</span>
+<span class="fc" id="L70">            	addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, </span>
+<span class="fc" id="L71">            		&quot;There was an error communicating with REST endpoint, please check server logs&quot;, null));</span>
+			
+<span class="fc" id="L73">			return &quot;&quot;;</span>
+		}
+		
+		//set the result if not empty
+<span class="fc" id="L77">		setPrimeNumbersResult(primeNumbers);</span>
+		
+<span class="fc" id="L79">		return &quot;&quot;;</span>
+	}
+
+	/**
+	 * interact with the prime REST API
+	 * 
+	 * @param maxNumber
+	 * @return a list of prime numbers
+	 */
+	public List&lt;Integer&gt; fetchPrimeNumbers(Integer maxPrimeNumber) {
+
+		/*
+		 * get the prime numbers from the client
+		 */
+<span class="fc" id="L93">		List&lt;Integer&gt; primeNumbers = primeNumbersClient.getPrimeNumbersFromRESTendpoint(maxPrimeNumber);</span>
+		
+<span class="fc bfc" id="L95" title="All 2 branches covered.">		if (primeNumbers == null) {</span>
+<span class="fc" id="L96">			logger.info(&quot;Nothing returned from REST API, there is a problem!&quot;);</span>
+<span class="fc" id="L97">			return null;</span>
+		}
+		
+<span class="fc" id="L100">		logger.info(&quot;Retrieved {} prime numbers from PrimeNumbersClient.getPrimeNumbers()&quot;, primeNumbers.size());</span>
+		
+<span class="fc" id="L102">		return primeNumbers;</span>
+	}
+
+	public Integer getPrimeLimit() {
+<span class="fc" id="L106">		return primeLimit;</span>
+	}
+
+	public void setPrimeLimit(Integer primeLimit) {
+<span class="fc" id="L110">		this.primeLimit = primeLimit;</span>
+<span class="fc" id="L111">	}</span>
+
+	public List&lt;Integer&gt; getPrimeNumbersResult() {
+<span class="fc" id="L114">		return primeNumbersResult;</span>
+	}
+
+	public void setPrimeNumbersResult(List&lt;Integer&gt; primeNumbersResult) {
+<span class="fc" id="L118">		this.primeNumbersResult = primeNumbersResult;</span>
+<span class="fc" id="L119">	}</span>
+
+	public Integer getResultsPageSize() {
+<span class="nc" id="L122">		return resultsPageSize;</span>
+	}
+
+	public void setResultsPageSize(Integer resultsPageSize) {
+<span class="nc" id="L126">		this.resultsPageSize = resultsPageSize;</span>
+<span class="nc" id="L127">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

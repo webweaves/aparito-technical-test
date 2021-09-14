@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PrimeNumbersClient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">web-frontend Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">com.csw.aparito.client</a> &gt; <span class="el_source">PrimeNumbersClient.java</span></div><h1>PrimeNumbersClient.java</h1><pre class="source lang-java linenums">package com.csw.aparito.client;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.json.JsonArray;
+import javax.json.JsonObject;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Invocation.Builder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * The prime numbers client is what does the work of obtaining the prime numbers
+ * 
+ * In this instance the numbers are obtained via REST call but this implementation 
+ * could be replaced with a completely different data source.
+ * 
+ * @author csw
+ *
+ */
+<span class="fc" id="L28">public class PrimeNumbersClient implements Serializable {</span>
+
+	private static final long serialVersionUID = 4833775986037364950L;
+
+	/*
+	 * configure logging output
+	 */
+<span class="fc" id="L35">	Logger logger = LoggerFactory.getLogger(PrimeNumbersClient.class);</span>
+	
+	private Client client;
+	
+	private WebTarget target;
+	
+<span class="fc" id="L41">	private String baseUrl = &quot;http://localhost:8080/primenumbers-rest-api/resources/generate-prime-numbers/&quot;;</span>
+		
+	/**
+	 * Do the actual REST request
+	 * 
+	 * @return list of numbers
+	 */
+	public List&lt;Integer&gt; getPrimeNumbersFromRESTendpoint(final Integer maxPrimeNumber) {
+		
+		/*
+		 * now we know the exact endpoint URL we can build the target client
+		 */
+<span class="fc" id="L53">		final String finalUrl = baseUrl + maxPrimeNumber;</span>
+		
+<span class="fc" id="L55">		buildClient(finalUrl);</span>
+		
+		/*
+		 * storage for results
+		 */
+<span class="fc" id="L60">		List&lt;Integer&gt; primeNumberResults = new ArrayList&lt;&gt;();</span>
+		
+<span class="fc" id="L62"> 		logger.info(&quot;Requesting prime numbers from REST endpoint {}&quot;, finalUrl);</span>
+		
+ 		/*
+ 		 * submit the REST request
+ 		 */
+ 		try {
+ 			/*
+ 			 * actual REST request fired off here
+ 			 */
+<span class="fc" id="L71"> 			JsonObject jsonObject = target.request(MediaType.APPLICATION_JSON_TYPE).get(JsonObject.class);</span>
+ 			
+<span class="fc" id="L73"> 			logger.info(&quot;Actual raw response from REST request: {}&quot;, jsonObject.get(&quot;primeNumbers&quot;));</span>
+ 			
+ 			//extract numbers from JSON
+<span class="fc" id="L76"> 			primeNumberResults = populatePrimeListFromJson(jsonObject);</span>
+ 			
+<span class="fc" id="L78"> 			logger.info(&quot;{} prime numbers obtained from REST request&quot;, primeNumberResults.size());</span>
+ 			
+<span class="fc" id="L80"> 			return primeNumberResults;</span>
+ 			
+<span class="nc" id="L82">		} catch (java.lang.Exception e) {</span>
+			/*
+			 * any errors fail gracefully
+			 */
+<span class="nc" id="L86">			logger.info(&quot;Error with REST request,response = {}&quot;, e.getMessage());</span>
+	
+<span class="nc" id="L88">			return null;</span>
+		}
+	}
+
+	/**
+	 * extract the prime numbers from the JSON object
+	 * 
+	 * @param jsonObject
+	 * @return
+	 */
+	public List&lt;Integer&gt; populatePrimeListFromJson(JsonObject jsonObject) {
+		
+<span class="fc" id="L100">		List&lt;Integer&gt; primeNumberResults = new ArrayList&lt;&gt;();</span>
+		
+		try {
+			/*
+			 * iterate through results and add to the return list of integers
+			 */
+<span class="fc" id="L106">			JsonArray jsonArray = (JsonArray)jsonObject.get(&quot;primeNumbers&quot;);</span>
+<span class="fc bfc" id="L107" title="All 2 branches covered.">			for (int idx=0; idx &lt; jsonArray.size(); ++idx) {</span>
+<span class="fc" id="L108">				primeNumberResults.add(Integer.valueOf(jsonArray.get(idx).toString())); </span>
+			}
+			
+<span class="fc" id="L111">			return primeNumberResults;</span>
+<span class="fc" id="L112">		} catch (java.lang.NullPointerException e) {</span>
+<span class="fc" id="L113">			logger.info(&quot;There was a problem parsing the JSON&quot;);</span>
+<span class="fc" id="L114">			return null;</span>
+		}
+	}
+
+	/**
+	 * Construct the client and target REST endpoint objects
+	 * 
+	 * @param string
+	 */
+	public void buildClient(final String finalUrl) {		
+<span class="nc" id="L124">		logger.info(&quot;Constructing client and target REST endpoint objects&quot;);</span>
+		
+		/*
+		 * build the client and define REST endpoint
+		 */
+<span class="nc" id="L129">		client = ClientBuilder.newClient();</span>
+<span class="nc" id="L130">		target = client.target(finalUrl);</span>
+<span class="nc" id="L131">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

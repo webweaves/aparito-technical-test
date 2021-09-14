@@ -1,0 +1,4067 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ScottFreeIT</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://christianweaves.com/jira/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-1]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-1">Backend service</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256913-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+<tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-Tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-5">AP-5</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-5">Prime numbers implementation</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-9">AP-9</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-9">Create REST endpoint</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>REST API component will be completed in a maven project named <b>primenumbers-rest-api</b>.</p>
+
+<p>This component can run independently from the web component.</p>
+
+<p>An example call once deployed:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+http:<span class="code-comment">//localhost:8080/primenumbers-<span class="code-keyword">rest</span>-api/resources/generate-prime-numbers/999 </span></pre>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15721"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15721"><td bgcolor="#ffffff">
+            <p>Backend component completed and pushed </p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-2]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256914-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+<tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-Tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-3">AP-3</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-3">Form validation</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-6">AP-6</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-6">Install Primefaces component</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-10">AP-10</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-10">Implement result pagination</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-12">AP-12</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-12">Check frontend rendering is responsive</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-13">AP-13</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-13">Create a form for user input</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Parent task for all frontend related issues.</p>
+
+<p>Frontend component will be completed in a maven project named <b>web-frontend</b>.</p>
+
+<p>This component relies on the <b>primenumbers-rest-api</b> being deployed</p>
+
+<p>Once deployed see deployment here:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+http:<span class="code-comment">//localhost:8080/PrimeNumbers</span></pre>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15722"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15722"><td bgcolor="#ffffff">
+            <p>Sub tasks all completed.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-2">AP-2</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-3]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-3">Form validation</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256915-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-1">Backend service</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-1">AP-1</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-5]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-5">Prime numbers implementation</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256917-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Obtain the method to create the prime numbers up to X</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15720"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15720"><td bgcolor="#ffffff">
+            <p>Prime number generation method obtained from <a href="https://www.baeldung.com/java-generate-prime-numbers" class="external-link" target="_blank" rel="nofollow noopener">https://www.baeldung.com/java-generate-prime-numbers</a> and used in PrimeNumbersController.java </p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-2">AP-2</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-6]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-6">Install Primefaces component</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256918-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Use PrimeFaces to handle GUI, use the maven dependency to include PrimeFaces in the project.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15717"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15717"><td bgcolor="#ffffff">
+            <p>Added primefaces dependency with</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+&lt;dependency&gt;
+    &lt;groupId&gt;org.primefaces&lt;/groupId&gt;
+    &lt;artifactId&gt;primefaces&lt;/artifactId&gt;
+    &lt;version&gt;7.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;prime-repo&lt;/id&gt;
+        &lt;name&gt;PrimeFaces Maven Repository&lt;/name&gt;
+        &lt;url&gt;http:<span class="code-comment">//repository.primefaces.org&lt;/url&gt;
+</span>        &lt;layout&gt;<span class="code-keyword">default</span>&lt;/layout&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt; </pre>
+</div></div>
+<p> </p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-7]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-7">Create 2 maven projects (REST and WebGUI)</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256919-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+<tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-Tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-15">AP-15</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-15">Create JEE project for REST API</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://christianweaves.com/jira/browse/AP-16">AP-16</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://christianweaves.com/jira/browse/AP-16">Create Java project for Frontend comp...</a>
+                    </td>
+                    <td>
+                        Sub-task
+                    </td>
+                    <td>
+                        Done
+                    </td>
+                    <td>
+                                                     Christian Weaves  &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Use the maven CLI tool to generate new projects</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-8]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-8">Push code to GitHub</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256920-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Push code to GitHub, this will happen periodically while in development</p>
+
+<p>GitHub repo: <a href="https://github.com/webweaves/aparito-technical-test" class="external-link" target="_blank" rel="nofollow noopener">https://github.com/webweaves/aparito-technical-test</a></p>
+
+<p>When complete tag the versions</p>
+<ul>
+	<li>web-frontend-1.0.0</li>
+	<li>primenumbers-rest-api-1.0.0</li>
+</ul>
+
+
+<p> </p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15724"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15724"><td bgcolor="#ffffff">
+            <p>Version 1 released, version tagged.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-1">Backend service</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-1">AP-1</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-9]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-9">Create REST endpoint</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256921-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15723"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15723"><td bgcolor="#ffffff">
+            <p>Rest endpoint published, see example below</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+http:<span class="code-comment">//localhost:8080/primenumbers-<span class="code-keyword">rest</span>-api/resources/generate-prime-numbers/999 </span></pre>
+</div></div>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-2">AP-2</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-10]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-10">Implement result pagination</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256922-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Ensure large result sets are presented in with pagination component</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15710"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">10/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15710"><td bgcolor="#ffffff">
+            <p>Use this component for pagination</p>
+
+<p><a href="https://www.primefaces.org/showcase/ui/data/datatable/paginator.xhtml" class="external-link" target="_blank" rel="nofollow noopener">https://www.primefaces.org/showcase/ui/data/datatable/paginator.xhtml</a></p>
+        </td></tr>
+                <tr id="comment-header-15715"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15715"><td bgcolor="#ffffff">
+            <p>Pagination completed with dataTable component attributes </p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+paginator=<span class="code-quote">"<span class="code-keyword">true</span>"</span> 
+paginatorTemplate=<span class="code-quote">"{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"</span> 
+currentPageReportTemplate=<span class="code-quote">"{startRecord}-{endRecord} of {totalRecords} records"</span> </pre>
+</div></div>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-11]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-11">Implement application server solution</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256923-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Wildfly will be used to serve the solution, this issue relates to a local instance of wildfly already running.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15718"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15718"><td bgcolor="#ffffff">
+            <p>If you have a local instance of wildfly running you can deploy the application with the following:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+mvn clean install wildfly:deploy -pl web-frontend -pl primenumbers-<span class="code-keyword">rest</span>-api </pre>
+</div></div>
+<p>And then point your browser to <a href="http://localhost:8080/PrimeNumbers" class="external-link" target="_blank" rel="nofollow noopener">http://localhost:8080/PrimeNumbers</a></p>
+
+<p>Alternatively you can run the script <b>./deployLocalWildflyInstance.sh</b> in the project root folder.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-2">AP-2</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-12]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-12">Check frontend rendering is responsive</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256924-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Must render correctly on laptop, phone and tablet.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15716"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15716"><td bgcolor="#ffffff">
+            <p>Rendering check on phone, tablet and desktop browser.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-2">Frontend GUI</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-2">AP-2</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-13]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-13">Create a form for user input</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256925-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>This form will post the user data to the backend service for processing (via a REST call).</p>
+
+<p>Core from elements are:</p>
+<ul>
+	<li>brief description label</li>
+	<li>input textbox for prime number entry</li>
+	<li>input textbox for result pagination size</li>
+	<li>and a submit button.</li>
+	<li>must include validation for all form elements</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15714"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15714"><td bgcolor="#ffffff">
+            <p>GUI work complete</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-14]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-14">Application bundling and container deployment</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 13/Sep/21
+
+                                    &nbsp;Due: 17/Sep/21
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256926-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Create Docker file and script to run docker container</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15713"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15713"><td bgcolor="#ffffff">
+            <p>Dockerfile and script created and pushed</p>
+        </td></tr>
+                <tr id="comment-header-15719"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15719"><td bgcolor="#ffffff">
+            <p>There are 2 ways to fire up the solution. Either run a local instance of the wildfly application server OR run the command below to run in a docker container</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+mvn clean install &amp;&amp; buildAndRunContainer.sh </pre>
+</div></div>
+<p>Maven will compile and build the required war under each projects target folder.</p>
+
+<p>The <b>buildAndRunContainer.sh</b> script will</p>
+<ul>
+	<li>download the latest wildfly docker image</li>
+	<li>build a new <b>aparito-tech-assignment-wildfly</b> image and add the two project war files (using Dockerfile)</li>
+	<li>start docker container based on <b>aparito-tech-assignment-wildfly</b> and expose port 8080 </li>
+</ul>
+
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-7">Create 2 maven projects (REST and WebGUI)</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-7">AP-7</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-15]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-15">Create JEE project for REST API</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256927-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>A maven project to provide business logic for the prime number generation</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15711"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">10/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15711"><td bgcolor="#ffffff">
+            <p>Create a new maven stype project with the following command</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+mvn archetype:generate \
+    -DgroupId=com.csw.aparito \
+    -DartifactId=primenumbers-<span class="code-keyword">rest</span>-api \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DinteractiveMode=<span class="code-keyword">false</span></pre>
+</div></div>
+<p> </p>
+        </td></tr>
+                <tr id="comment-header-15725"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15725"><td bgcolor="#ffffff">
+            <p>Project completed</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://christianweaves.com/jira/browse/AP-7">Create 2 maven projects (REST and WebGUI)</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://christianweaves.com/jira/browse/AP-7">AP-7</a>)</span>
+                <h3 class="formtitle"><img src="https://christianweaves.com/jira/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [AP-16]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-16">Create Java project for Frontend component</a>
+            <span class="subText">
+               Created: 10/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 13/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Sub-task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256928-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Document frontend project creation here</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15712"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">10/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15712"><td bgcolor="#ffffff">
+            <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+mvn archetype:generate \
+    -DgroupId=com.csw.aparito \
+    -DartifactId=web-frontend \
+    -DarchetypeArtifactId=maven-archetype-webapp \
+    -DinteractiveMode=<span class="code-keyword">false</span> </pre>
+</div></div>
+        </td></tr>
+                <tr id="comment-header-15726"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15726"><td bgcolor="#ffffff">
+            <p>Project created.</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-17]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-17">Ensure maxmum code coverage with unit test (Over 80%)</a>
+            <span class="subText">
+               Created: 13/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 14/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256929-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Implement unit test, test will be run for every maven build</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15728"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">13/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15728"><td bgcolor="#ffffff">
+            <p>Code coverage reports published here</p>
+
+<p>/target/site/jacoco/index.html</p>
+        </td></tr>
+                <tr id="comment-header-15731"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">14/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15731"><td bgcolor="#ffffff">
+            <p>Test coverage over 80% for both web and REST projects</p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-18]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-18">Add jacoco for code coverage reports</a>
+            <span class="subText">
+               Created: 13/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 14/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256930-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Both projects need code coverage reports, add maven plugin.</p>
+
+<p>Plugin will generate code coverage reports every time project is built</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15732"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">14/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15732"><td bgcolor="#ffffff">
+            <p>Code coverage plugin added to pom.xml for both projects</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+&lt;plugin&gt;
+    &lt;groupId&gt;org.jacoco&lt;/groupId&gt;
+    &lt;artifactId&gt;jacoco-maven-plugin&lt;/artifactId&gt; 
+    &lt;version&gt;0.8.4&lt;/version&gt;
+    &lt;executions&gt;
+        &lt;execution&gt;
+           &lt;goals&gt; 
+              &lt;goal&gt;prepare-agent&lt;/goal&gt;
+           &lt;/goals&gt;
+        &lt;/execution&gt;
+        &lt;execution&gt; 
+            &lt;id&gt;report&lt;/id&gt;
+            &lt;phase&gt;prepare-<span class="code-keyword">package</span>&lt;/phase&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;report&lt;/goal&gt;
+            &lt;/goals&gt;
+        &lt;/execution&gt;
+    &lt;/executions&gt;
+&lt;/plugin&gt;</pre>
+</div></div>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-19]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-19">BUG: Problem with rows property after using datatable paginator</a>
+            <span class="subText">
+               Created: 14/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 14/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256931-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>When the user clicks the Send button then pages the table with the paginator controls the next time the user submits the form the rows textbox value is completely ignored.</p>
+
+<p>Currently using PrimeFaces version 7</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15729"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">14/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15729"><td bgcolor="#ffffff">
+            <p>A very strange issue but appears the data table paginator controls break the JSF tree? Possibly a PrimeFaces bug.</p>
+        </td></tr>
+                <tr id="comment-header-15730"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">14/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15730"><td bgcolor="#ffffff">
+            <p>Upgraded the PrimeFaces dependency to version 8 and this has resolved the issue.</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.primefaces&lt;/groupId&gt;
+        &lt;artifactId&gt;primefaces&lt;/artifactId&gt;
+        &lt;version&gt;8.0&lt;/version&gt;
+    &lt;/dependency&gt; </pre>
+</div></div>
+<p> </p>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [AP-20]&nbsp;<a href="https://christianweaves.com/jira/browse/AP-20">Prepare for release</a>
+            <span class="subText">
+               Created: 14/Sep/21                   &nbsp;Updated: 14/Sep/21
+
+                                                    &nbsp;Resolved: 14/Sep/21
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://christianweaves.com/jira/secure/BrowseProject.jspa?id=10702">Aparito</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Task
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Major
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_reporter_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="csw" id="word_assignee_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-256932-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Remove snapshot from version in pom ready for version 1.0.0 release.</p>
+
+<p>After release tag the version in Git Version_1_0_0</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-15733"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="csw" id="word_commented_csw" href="https://christianweaves.com/jira/secure/ViewProfile.jspa?name=csw">Christian Weaves</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">14/Sep/21</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-15733"><td bgcolor="#ffffff">
+            <p>All pom.xml version updated to (removed SNAPSHOT) ready for release</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+ &lt;version&gt;1.0.0&lt;/version&gt;</pre>
+</div></div>
+        </td></tr>
+            </table>
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Generated at Tue Sep 14 11:13:43 BST 2021 by Christian Weaves using Jira 8.14.0#814001-sha1:ab08d3d2b500818bdad5c85d636b509d4cade801.
+
+</body>
+</html>
