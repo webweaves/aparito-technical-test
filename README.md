@@ -21,7 +21,7 @@ All CLI commands mentioned in this document are run from the project root (apari
 
 ## Getting started
 
-Clone the git repository with the following command:
+Clone the git repository with the following command:  
 git clone https://github.com/webweaves/aparito-technical-test.git 
 
 Change directory to aparito-technical-test with **cd aparito-technical-test**
@@ -54,8 +54,11 @@ Follow the links below for detailed unit test coverage:
 
 ## Build and deploy with maven:
 
-### Instal to maven repository with
+### Install to maven repository with
 mvn install
+
+#Build and deploy both projects (requires running instance of Wildfly)
+mvn install wildfly:deploy -pl web-frontend -pl primenumbers-rest-api
 
 ## Build and deploy individual projects with maven:
 
