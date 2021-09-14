@@ -2,6 +2,7 @@ package com.csw.aparito;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -69,13 +70,13 @@ public class FrontendController implements Serializable {
             	addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, 
             		"There was an error communicating with REST endpoint, please check server logs", null));
 			
-			return null;
+			return "";
 		}
 		
 		//set the result if not empty
 		setPrimeNumbersResult(primeNumbers);
 		
-		return null;
+		return "";
 	}
 
 	/**
