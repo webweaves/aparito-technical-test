@@ -40,7 +40,7 @@ After deployment point browser to: http://localhost:8080/PrimeNumbers/
 ## Issue tracking
 Although only a small project it is vital to track all tasks using Jira. Not only does highlight all outstading work but also helps maintain focus.
 
-All source code commits where cross referenced with the Jira issue number (where applicable).
+All source code commits are cross referenced with the Jira issue number (where applicable).
 
 [See Jira documentation here](https://htmlpreview.github.io/?https://github.com/webweaves/aparito-technical-test/blob/main/documentation/jira/AparitoTechTestJiraIssues.doc)
 
