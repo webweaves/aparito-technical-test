@@ -29,7 +29,7 @@ Change directory to aparito-technical-test with **cd aparito-technical-test**
 ## Deployment
 There are two options for deployment 
 * To deploy locally you will need an install of wildfly running, download, install and startup [Download here](https://www.wildfly.org/downloads/)
-When wildfly is running you can run the script **deployLocalWildflyInstance.sh** from the command line, this will build and deploy the application.  
+When wildfly is running you can run the script **deployLocalWildflyInstance.sh** from the command line, this will build and deploy the application.  ` 
 After deployment point browser to: http://localhost:8080/PrimeNumbers/
 
 * Run with docker
@@ -49,12 +49,12 @@ Each time a project is built with maven code coverage reports are updated in the
 
 Follow the links below for detailed unit test coverage:
 
-[Project: web-frontend code test coverage](https://htmlpreview.github.io/?https://github.com/webweaves/aparito-technical-test/blob/main/documentation/codeTestCoverage/web-frontent/index.html)  
+[Project: web-frontend code test coverage](https://htmlpreview.github.io/?https://github.com/webweaves/aparito-technical-test/blob/main/documentation/codeTestCoverage/web-frontend/index.html)  
 [Project: primenumbers-rest-api](https://htmlpreview.github.io/?https://github.com/webweaves/aparito-technical-test/blob/main/documentation/codeTestCoverage/primenumbers-rest-api/index.html)  
 
 ## Build and deploy with maven:
 
-### Installing with maven
+### Instal to maven repository with
 mvn install
 
 ## Build and deploy individual projects with maven:
